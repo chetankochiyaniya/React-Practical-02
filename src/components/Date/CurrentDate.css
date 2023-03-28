@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     color: rgba(0, 0, 0, 0.68);
+    margin-bottom: 10px ;
   }
   .date-container {
     display: flex;

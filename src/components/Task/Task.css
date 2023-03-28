@@ -1,0 +1,20 @@
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    opacity: 0.75;
+    font-size: 17px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: rgb(31, 142, 20);
+  }
+  
