@@ -1,7 +1,18 @@
+import React, { Component } from 'react';
 import './App.css';
+import CurrentDate from './components/Date/CurrentDate';
 
-function App() {
-  return <h1 className='App'>Todo React App</h1>
+{/* Class Component - App */}
+export default class App extends Component {
+  render() {
+    return (
+      <div className='App'>
+        <div className='todo-container'>
+          {/* Stateless Component - CurrentDate*/}
+          <CurrentDate />
+        </div>
+      </div>
+    )
+
+  }
 }
-
-export default App;
