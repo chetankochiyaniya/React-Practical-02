@@ -1,15 +1,15 @@
 .task {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0px;
+    padding: 12px 0px;
     opacity: 0.75;
     font-size: 17px;
 }
 input[type="checkbox"] {
   position: relative;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border: 2px solid #333;
   border-radius: 50%;
 }
@@ -19,13 +19,32 @@ input[type="checkbox"]::before {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -51%) rotate(60deg);
+  transform: translate(-49%, -51%) rotate(60deg);
   font-family: "Font Awesome 5 Brands";
-  font-size: 16px;
+  font-size: 19px;
   color: #fff;
 }
 
 input[type="checkbox"]:checked {
-  border-color: #07be47;
-  background-color: #07be47;
+  border-color: rgb(52, 221, 156);
+  background-color: rgb(52, 221, 156);
+}
+
+.add-todo-btn-container {
+  display: flex;
+  justify-content: center;
+  bottom: -50px;
+  position: relative;
+}
+.add-todo-button {
+  background-color: rgb(52, 221, 156);
+  opacity: 0.9;
+  font-size: 38px;
+  color: rgba(0, 0, 0, 0.426);
+  text-align: center;
+  border: 1px ;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
 }
