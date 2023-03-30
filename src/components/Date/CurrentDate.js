@@ -10,10 +10,8 @@ const CurrentDate = () => {
     {/*The regular expression /,?\s+/ matches any sequence of one or more whitespace 
         characters (\s+) optionally preceded by a comma (,?)*/}
 
-    localStorage.setItem('currentDate', formattedDate)
-
     return <>
-        <div className='container'>
+        <div className='todo-date-container'>
             <div className='date-container'>
                 <div className='day'>{day}</div>
                 <div className='month-year'>

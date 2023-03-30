@@ -1,14 +1,15 @@
+/* css custom classes */
 .task-list-container{
   height: 338px !important;
   width: 250px !important;
   overflow-y: auto;
 }
 .task {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 0px;
-    opacity: 0.75;
-    font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0px;
+  opacity: 0.75;
+  font-size: 17px;
 }
 .task-msg {
   max-width: 215px !important;
@@ -21,46 +22,22 @@ input[type="checkbox"] {
   appearance: none;
   width: 24px;
   height: 24px;
+  border-radius: 50%;
   border: 2px solid #333;
-  border-radius: 50%;
   cursor: pointer;
 }
-
-input[type="checkbox"]::before {
-  content: "\f2d5";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-49%, -51%) rotate(60deg);
-  font-family: "Font Awesome 5 Brands";
-  font-size: 19px;
-  color: #fff;
-}
-
 input[type="checkbox"]:checked {
-  border-color: rgb(52, 221, 156);
-  background-color: rgb(52, 221, 156);
+  border: none;
+  background-image: url('../../../public/checked-icon.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.task-msg.checked {
+  opacity: 0.5 !important;
 }
 
-.add-todo-btn-container {
-  display: flex;
-  justify-content: center;
-  bottom: -35px;
-  position: relative;
-}
-.add-todo-button {
-  background-color: rgb(52, 221, 156);
-  opacity: 0.9;
-  font-size: 38px;
-  color: rgba(0, 0, 0, 0.426);
-  text-align: center;
-  border: 1px ;
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  cursor: pointer;
-}
 
+/* css pseudo-element selector */
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -72,10 +49,4 @@ input[type="checkbox"]:checked {
 
 ::-webkit-scrollbar-track {
   background-color: #f7f7f7; 
-}
-
-.input-size{
-  width: 238px;
-  height: 26px;
-  margin-top: 8px;
 }
