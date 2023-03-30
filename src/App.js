@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import CurrentDate from './components/Date/CurrentDate';
 import Task from './components/Task/Task';
-
-{/* Class Component - App */}
+/* Class Component - App */
 export default class App extends Component {
   render() {
     return (
@@ -11,6 +10,7 @@ export default class App extends Component {
         <div className='todo-container'>
           {/* Stateless Component - CurrentDate*/}
           <CurrentDate />
+          {/* Functional component with hooks - Task */}
           <Task />
         </div>
       </div>

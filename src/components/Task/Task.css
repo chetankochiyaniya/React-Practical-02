@@ -73,3 +73,9 @@ input[type="checkbox"]:checked {
 ::-webkit-scrollbar-track {
   background-color: #f7f7f7; 
 }
+
+.input-size{
+  width: 238px;
+  height: 26px;
+  margin-top: 8px;
+}
