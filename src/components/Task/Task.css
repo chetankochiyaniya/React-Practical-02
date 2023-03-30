@@ -21,25 +21,16 @@ input[type="checkbox"] {
   appearance: none;
   width: 24px;
   height: 24px;
-  border: 2px solid #333;
   border-radius: 50%;
+  border: 2px solid #333;
   cursor: pointer;
 }
 
-input[type="checkbox"]::before {
-  content: "\f2d5";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-49%, -51%) rotate(60deg);
-  font-family: "Font Awesome 5 Brands";
-  font-size: 19px;
-  color: #fff;
-}
-
-input[type="checkbox"]:checked {
-  border-color: rgb(52, 221, 156);
-  background-color: rgb(52, 221, 156);
+input[type="checkbox"]:checked{
+  border: none;
+  background-image: url('../../../public/checked-icon.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .add-todo-btn-container {
